@@ -14,7 +14,7 @@ per 5
 5. applico i punti 3 e 4 contemporaneamente
 6. aggiungo alla variabile che annota tutti i passaggi un tag html che
 contenga il singolo conteggio in modo che poi possa manipolare quest'ultimo
-con il suo tag genitore
+con il suo tag genitore (tag contenitore è li e nell'html si preinserisce un ul)
 7. aggiunta variabile FizzBuzzCounterColor per cambiare sfondo ai multipli
 fizz, buzz e fizzbuzz
 */
