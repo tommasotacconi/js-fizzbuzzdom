@@ -1,0 +1,137 @@
+/* Css reset */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* Generics */
+body {
+  font-family: Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+}
+
+main {
+  padding: 10px;
+}
+
+form {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 0 20px;
+  max-width: 650px;
+}
+
+label {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+table.table {
+  margin-bottom: 0;
+  border-radius: 1rem;
+
+  td {
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 0px;
+  }
+
+  th:first-child {
+    border-top-left-radius: 0.375rem;
+  }
+
+  th:last-child {
+    border-top-right-radius: 0.375rem;
+  }
+
+  td:first-child {
+    border-bottom-left-radius: 0.375rem;
+  }
+
+  td:last-child {
+    border-bottom-right-radius: 0.375rem;
+  }
+}
+
+/* table {
+  margin: ;
+} */
+
+/* header {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  width: 100%; 
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+footer {
+  padding: 30px;
+  color: white;
+} */
+
+/* nav {
+  line-height: 30px;
+  background-color: aquamarine;
+  max-width: 1100px;
+  margin: 0 auto;
+} */
+
+/* nav > div{
+  padding: var(--nav-pd)
+} */
+
+/* span {
+  margin: 0 5px;
+} */
+
+/* img {
+  width: 100%;
+} */
+
+/* ul {
+  list-style-type: none;
+  
+  a {
+      text-decoration: none;
+      color: white;
+      margin-right: 5px;
+  }
+
+  li:last-child a {
+      margin-right: 0;
+  }
+  
+} */
+
+/* Utilities */
+#fullName {
+  flex-basis: 50%;
+}
+
+#kmTot {
+  width: 100px;
+}
+
+#age {
+  width: 60px;
+}
+
+form .card {
+  padding: 20px;
+}
+
+.btn {
+  margin-top: 60px;
+}
+
+.card-table {
+  max-width: 650px;
+}
+
+
+
+
