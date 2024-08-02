@@ -71,15 +71,21 @@ ul {
     line-height: 30px;
     text-align: center;
     background-color: skyblue;
-    flex-basis: calc(100% / 10 - 10px)
+    flex-basis: calc(100% / 10 - 10px);
   }
-  
-  
 }
 
 /* Utilities */
+.lightseagreen-bg {
+  background-color: lightseagreen
+}
 
+.cadetblue-bg {
+  background-color: cadetblue;
+}
 
-
+.darkcyan-bg {
+ background-color: darkcyan;
+}
 
 

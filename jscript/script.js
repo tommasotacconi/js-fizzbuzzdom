@@ -15,6 +15,8 @@ per 5
 6. aggiungo alla variabile che annota tutti i passaggi un tag html che
 contenga il singolo conteggio in modo che poi possa manipolare quest'ultimo
 con il suo tag genitore
+7. aggiunta variabile FizzBuzzCounterColor per cambiare sfondo ai multipli
+fizz, buzz e fizzbuzz
 */
 
 // Fase preparatoria
@@ -22,19 +24,34 @@ con il suo tag genitore
 let FizzBuzzCounter = ''
 let FizzBuzzCounterNotepad = '';
 const list = document.querySelector('ul');
+let FizzBuzzCounterColor = ''
 
 // Fase di recupero dati
 
 // Fase di elaborazione dati
 for (let i = 1; i <= 100; i++) {
+
   FizzBuzzCounter = i
+
   // 3.
-  if (i % 3 === 0) FizzBuzzCounter = 'fizz'
+  if (i % 3 === 0) {
+    FizzBuzzCounter = 'fizz';
+    FizzBuzzCounterColor = 'lightseagreen-bg';
+  } 
   // 4.
-  if (i % 5 === 0) FizzBuzzCounter = 'buzz'
+  if (i % 5 === 0) {
+    FizzBuzzCounter = 'buzz';
+    FizzBuzzCounterColor = 'cadetblue-bg';
+  } 
+  
   // 5.
-  if (i % 3 === 0 && i % 5 === 0) FizzBuzzCounter = 'fizzbuzz'
-  FizzBuzzCounterNotepad += '<li>' + FizzBuzzCounter + '</li>'
+  if (i % 3 === 0 && i % 5 === 0) {
+    FizzBuzzCounter = 'fizzbuzz';
+    FizzBuzzCounterColor = 'darkcyan-bg';
+  }
+  
+  FizzBuzzCounterNotepad += `<li class=${FizzBuzzCounterColor}>` + FizzBuzzCounter + '</li>'
+  FizzBuzzCounterColor = 'skyblue'
 }
 
 console.log(FizzBuzzCounterNotepad)
