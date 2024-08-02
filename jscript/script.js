@@ -12,12 +12,16 @@ a 0 se diviso per 3
 4. faccio la stessa operazione del punto precedente ma con una divisione
 per 5
 5. applico i punti 3 e 4 contemporaneamente
+6. aggiungo alla variabile che annota tutti i passaggi un tag html che
+contenga il singolo conteggio in modo che poi possa manipolare quest'ultimo
+con il suo tag genitore
 */
 
 // Fase preparatoria
 // 1.
 let FizzBuzzCounter = ''
 let FizzBuzzCounterNotepad = '';
+const list = document.querySelector('ul');
 
 // Fase di recupero dati
 
@@ -30,10 +34,11 @@ for (let i = 1; i <= 100; i++) {
   if (i % 5 === 0) FizzBuzzCounter = 'buzz'
   // 5.
   if (i % 3 === 0 && i % 5 === 0) FizzBuzzCounter = 'fizzbuzz'
-  FizzBuzzCounterNotepad += ' ' + FizzBuzzCounter
+  FizzBuzzCounterNotepad += '<li>' + FizzBuzzCounter + '</li>'
 }
 
 console.log(FizzBuzzCounterNotepad)
+list.innerHTML = FizzBuzzCounterNotepad
 
 // Fase di restituzione dati
   
